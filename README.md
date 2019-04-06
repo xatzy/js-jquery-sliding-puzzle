@@ -13,7 +13,7 @@ Featuring unlimited choices of column / rows:
 3x3:
 ![description](examples/ex_3x3.PNG)
 
-6x6
+6x6:
 ![description](examples/ex_6x6.PNG)
 
 
