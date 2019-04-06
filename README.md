@@ -10,7 +10,7 @@ What it looks like:
 
 Featuring unlimited choices of column / rows:
 
-![description](examples/ex_3x6.PNG)
+![description](examples/ex_3x3.PNG)
 ![description](examples/ex_6x6.PNG)
 
 
