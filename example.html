@@ -1,0 +1,28 @@
+<html>
+    <div id="drawTo"></div>
+    <img alt="puzzle" id="image" src="https://maruki.eu/media/puzzle.jpg"/ style="display:none;">
+</html>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+crossorigin="anonymous"></script>
+<script src="sliding_puzzle.js"></script>
+
+<script type="text/javascript">
+    /**
+    * Calls the puzzle builder with a loaded image
+    */
+    $(document).ready(function(){
+        var img = document.querySelector('#image');
+        function loaded() {
+            // img: the image, drawTo:the div, 4: number of columns/rows, 15: animation speed multiplier
+            var puzzle = new SlidingPuzzle(img, "drawTo", 4, 15);
+            puzzle.drawBoard();
+        };
+        if (img.complete) {
+          loaded();
+      } else {
+          img.addEventListener('load', loaded);
+      }
+  });
+
+</script>
