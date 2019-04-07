@@ -45,6 +45,8 @@ $(document).ready(function(){
   } else {
       img.addEventListener('load', loaded);
   }
+});
+
 ```
 
 Assuming you have an img with src setup within your html or a dynamically created image in img, and a div with id "drawTo" within your html.
