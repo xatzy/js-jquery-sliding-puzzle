@@ -249,17 +249,8 @@ class SlidingPuzzle {
 
         if (this.divideBy * this.divideBy % 2 == 0) // Even puzzle size
         {
-            if ((this.divideBy - emptyIndex.row) % 2 == 0) // if the blank is on an odd numbered row counting from the bottom
-            {
-                if (inversions % 2 == 0) // the state must have an even number of inversions
-                    return true; // then it is solvable
-            }
-            else // if the blank is an an even numbered row counting from the bottom
-            {
-                if (inversions % 2 != 0) // the state must have an odd number of inversions
-                    return true; // then is solvable
-            }
-
+            if ((emptyIndex.row + inversions) % 2 != 0)
+                return true;
         }
         else // odd puzzle size
         {
